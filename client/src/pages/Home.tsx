@@ -322,7 +322,7 @@ function EquipmentSection() {
       color: "amber",
     },
     {
-      title: "3-Axis Heavy Duty System",
+      title: "4-Axis Heavy Duty System",
       subtitle: "Large Components",
       description: "Dedicated system for heavy and long pieces including OD (outer diameter) work, ID (inner diameter) cladding, and large-scale industrial components. Handles pipeline segments, large valves, and heavy shafts.",
       capabilities: ["OD (outer diameter) cladding", "ID (inner diameter) work", "Long piece processing", "Heavy component handling", "High deposition rates", "Large surface areas"],
@@ -679,7 +679,7 @@ function TechnologySection() {
                 <div key={i} className="flex gap-3 group">
                   <div className="w-1.5 h-full min-h-[2rem] bg-gradient-to-b from-[oklch(0.72_0.18_65)] to-[oklch(0.82_0.14_185)] flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-['Rajdhani'] font-700 text-sm uppercase tracking-wide text-[oklch(0.85_0.005_240)] mb-1">
+                    <h4 className="font-['Rajdhani'] font-700 text-sm uppercase tracking-wide text-[oklch(0.72_0.18_65)] mb-1">
                       {adv.title}
                     </h4>
                     <p className="text-[oklch(0.50_0.01_240)] text-xs font-['Open_Sans'] leading-relaxed">
