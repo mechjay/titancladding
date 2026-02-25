@@ -859,7 +859,7 @@ function CTABannerSection() {
 function ContactSection() {
   const { ref, inView } = useInView(0.1);
   const [formData, setFormData] = useState({
-    name: "", company: "", email: "", phone: "", service: "", message: "",
+    name: "", company: "", email: "", phone: "", service: "", message: "", file: null as File | null,
   });
   const [submitted, setSubmitted] = useState(false);
 
@@ -1059,6 +1059,21 @@ function ContactSection() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
+                </div>
+
+                <div>
+                  <label className="block text-[oklch(0.55_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
+                    Upload Drawings or Specifications (Optional)
+                  </label>
+                  <input
+                    type="file"
+                    accept=".pdf,.dwg,.step,.stp,.jpg,.jpeg,.png,.doc,.docx"
+                    className="w-full bg-[oklch(0.14_0.01_240)] border border-[oklch(0.25_0.01_240)] text-[oklch(0.85_0.005_240)] px-4 py-3 text-sm font-['Open_Sans'] focus:outline-none focus:border-[oklch(0.72_0.18_65)] transition-colors cursor-pointer file:bg-[oklch(0.72_0.18_65)] file:border-0 file:text-[oklch(0.09_0.01_240)] file:px-4 file:py-2 file:rounded file:cursor-pointer file:font-bold"
+                    onChange={(e) => setFormData({ ...formData, file: e.target.files?.[0] || null })}
+                  />
+                  <p className="text-[oklch(0.40_0.01_240)] text-xs mt-2">
+                    Accepted: PDF, DWG, STEP, JPG, PNG, DOC (Max 10MB)
+                  </p>
                 </div>
 
                 <button type="submit" className="titan-btn-primary w-full flex items-center justify-center gap-3 text-base">
