@@ -66,10 +66,10 @@ function HeroSection() {
         backgroundPosition: "center",
       }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.06_0.01_240/0.92)] via-[oklch(0.06_0.01_240/0.75)] to-[oklch(0.06_0.01_240/0.40)]" />
+      {/* Dark overlay - Lightened */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.15_0.01_240/0.65)] via-[oklch(0.15_0.01_240/0.45)] to-[oklch(0.15_0.01_240/0.20)]" />
       {/* Amber gradient overlay at bottom */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.06_0.01_240/0.95)] via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.15_0.01_240/0.60)] via-transparent to-transparent" />
 
       <div className="container relative z-10 pt-24 pb-20">
         <div className="max-w-3xl">
