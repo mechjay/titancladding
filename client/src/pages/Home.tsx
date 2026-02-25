@@ -67,9 +67,9 @@ function HeroSection() {
       }}
     >
       {/* Dark overlay - Lightened */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.18_0.01_240/0.65)] via-[oklch(0.18_0.01_240/0.45)] to-[oklch(0.18_0.01_240/0.20)]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.15_0.01_240/0.65)] via-[oklch(0.15_0.01_240/0.45)] to-[oklch(0.15_0.01_240/0.20)]" />
       {/* Amber gradient overlay at bottom */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.18_0.01_240/0.60)] via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.15_0.01_240/0.60)] via-transparent to-transparent" />
 
       <div className="container relative z-10 pt-24 pb-20">
         <div className="max-w-3xl">
@@ -157,7 +157,7 @@ function StatsSection() {
   ];
 
   return (
-    <section className="bg-[oklch(0.18_0.01_240)] py-16 border-y border-[oklch(0.25_0.01_240)]">
+    <section className="bg-[oklch(0.94_0.01_240)] py-16 border-y border-[oklch(0.18_0.01_240)]">
       <div className="container" ref={ref}>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, i) => (
@@ -241,7 +241,7 @@ function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-[oklch(0.18_0.01_240)]">
+    <section id="services" className="py-24 bg-[oklch(0.92_0.01_240)]">
       <div className="container" ref={ref}>
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -322,7 +322,7 @@ function EquipmentSection() {
       color: "amber",
     },
     {
-      title: "4-Axis Heavy Duty System",
+      title: "3-Axis Heavy Duty System",
       subtitle: "Large Components",
       description: "Dedicated system for heavy and long pieces including OD (outer diameter) work, ID (inner diameter) cladding, and large-scale industrial components. Handles pipeline segments, large valves, and heavy shafts.",
       capabilities: ["OD (outer diameter) cladding", "ID (inner diameter) work", "Long piece processing", "Heavy component handling", "High deposition rates", "Large surface areas"],
@@ -338,7 +338,7 @@ function EquipmentSection() {
   ];
 
   return (
-    <section id="equipment" className="py-24 bg-[oklch(0.18_0.01_240)]">
+    <section id="equipment" className="py-24 bg-[oklch(0.92_0.01_240)]">
       <div className="container" ref={ref}>
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -381,7 +381,7 @@ function EquipmentSection() {
         </div>
 
         {/* Technical specs callout */}
-        <div className={`mt-16 p-8 border border-[oklch(0.30_0.01_240)] bg-[oklch(0.22_0.01_240)] transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <div className={`mt-16 p-8 border border-[oklch(0.25_0.01_240)] bg-[oklch(0.94_0.01_240)] transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="font-['Rajdhani'] font-700 text-lg text-[oklch(0.72_0.18_65)] uppercase tracking-wide mb-2">OD Work</div>
@@ -438,7 +438,7 @@ function QualityLabSection() {
   ];
 
   return (
-    <section id="quality" className="py-24 bg-[oklch(0.18_0.01_240)]">
+    <section id="quality" className="py-24 bg-[oklch(0.92_0.01_240)]">
       <div className="container" ref={ref}>
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -493,7 +493,7 @@ function QualityLabSection() {
         </div>
 
         {/* Quality Promise */}
-        <div className={`p-8 border-l-4 border-[oklch(0.72_0.18_65)] bg-[oklch(0.22_0.01_240)] transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <div className={`p-8 border-l-4 border-[oklch(0.72_0.18_65)] bg-[oklch(0.94_0.01_240)] transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <div className="flex gap-6 items-start">
             <div className="text-3xl flex-shrink-0">✓</div>
             <div>
@@ -563,7 +563,7 @@ function IndustriesSection() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-[oklch(0.18_0.01_240/0.92)]" />
+      <div className="absolute inset-0 bg-[oklch(0.93_0.01_240/0.92)]" />
 
       <div className="container relative z-10" ref={ref}>
         {/* Section Header */}
@@ -591,7 +591,7 @@ function IndustriesSection() {
               className={`p-6 border transition-all duration-700 group ${
                 industry.highlight
                   ? "border-[oklch(0.72_0.18_65)/0.6] bg-[oklch(0.72_0.18_65)/0.08] hover:bg-[oklch(0.72_0.18_65)/0.12]"
-                  : "border-[oklch(0.30_0.01_240)] bg-[oklch(0.22_0.01_240/0.7)] hover:border-[oklch(0.72_0.18_65)/0.4] hover:bg-[oklch(0.22_0.01_240/0.9)]"
+                  : "border-[oklch(0.25_0.01_240)] bg-[oklch(0.91_0.01_240/0.7)] hover:border-[oklch(0.72_0.18_65)/0.4] hover:bg-[oklch(0.91_0.01_240/0.9)]"
               } ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
@@ -636,7 +636,7 @@ function TechnologySection() {
   ];
 
   return (
-    <section id="technology" className="py-24 bg-[oklch(0.18_0.01_240)]">
+    <section id="technology" className="py-24 bg-[oklch(0.92_0.01_240)]">
       <div className="container" ref={ref}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Image */}
@@ -679,7 +679,7 @@ function TechnologySection() {
                 <div key={i} className="flex gap-3 group">
                   <div className="w-1.5 h-full min-h-[2rem] bg-gradient-to-b from-[oklch(0.72_0.18_65)] to-[oklch(0.82_0.14_185)] flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-['Rajdhani'] font-700 text-sm uppercase tracking-wide text-[oklch(0.72_0.18_65)] mb-1">
+                    <h4 className="font-['Rajdhani'] font-700 text-sm uppercase tracking-wide text-[oklch(0.85_0.005_240)] mb-1">
                       {adv.title}
                     </h4>
                     <p className="text-[oklch(0.50_0.01_240)] text-xs font-['Open_Sans'] leading-relaxed">
@@ -711,7 +711,7 @@ function AboutSection() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-[oklch(0.18_0.01_240/0.88)]" />
+      <div className="absolute inset-0 bg-[oklch(0.93_0.01_240/0.88)]" />
 
       <div className="container relative z-10" ref={ref}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -864,10 +864,10 @@ function ContactSection() {
     setSubmitted(true);
   };
 
-  const inputClass = "w-full bg-[oklch(0.22_0.01_240)] border border-[oklch(0.30_0.01_240)] text-[oklch(0.92_0.01_65)] placeholder-[oklch(0.60_0.01_65)] px-4 py-3 text-sm font-['Open_Sans'] focus:outline-none focus:border-[oklch(0.72_0.18_65)] transition-colors";
+  const inputClass = "w-full bg-[oklch(0.90_0.01_240)] border border-[oklch(0.25_0.01_240)] text-[oklch(0.85_0.005_240)] placeholder-[oklch(0.40_0.01_240)] px-4 py-3 text-sm font-['Open_Sans'] focus:outline-none focus:border-[oklch(0.72_0.18_65)] transition-colors";
 
   return (
-    <section id="contact" className="py-24 bg-[oklch(0.18_0.01_240)]">
+    <section id="contact" className="py-24 bg-[oklch(0.94_0.01_240)]">
       <div className="container" ref={ref}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left: Info */}
@@ -1033,13 +1033,13 @@ function ContactSection() {
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   >
-                    <option value="" className="bg-[oklch(0.22_0.01_240)]">Select a service...</option>
-                    <option value="laser-cladding" className="bg-[oklch(0.22_0.01_240)]">Laser Cladding</option>
-                    <option value="hardfacing" className="bg-[oklch(0.22_0.01_240)]">Hardfacing</option>
-                    <option value="component-repair" className="bg-[oklch(0.22_0.01_240)]">Component Repair</option>
-                    <option value="corrosion-protection" className="bg-[oklch(0.22_0.01_240)]">Corrosion Protection</option>
-                    <option value="laser-hardening" className="bg-[oklch(0.22_0.01_240)]">Laser Hardening</option>
-                    <option value="custom" className="bg-[oklch(0.22_0.01_240)]">Custom Solution</option>
+                    <option value="" className="bg-[oklch(0.90_0.01_240)]">Select a service...</option>
+                    <option value="laser-cladding" className="bg-[oklch(0.90_0.01_240)]">Laser Cladding</option>
+                    <option value="hardfacing" className="bg-[oklch(0.90_0.01_240)]">Hardfacing</option>
+                    <option value="component-repair" className="bg-[oklch(0.90_0.01_240)]">Component Repair</option>
+                    <option value="corrosion-protection" className="bg-[oklch(0.90_0.01_240)]">Corrosion Protection</option>
+                    <option value="laser-hardening" className="bg-[oklch(0.90_0.01_240)]">Laser Hardening</option>
+                    <option value="custom" className="bg-[oklch(0.90_0.01_240)]">Custom Solution</option>
                   </select>
                 </div>
 
@@ -1064,7 +1064,7 @@ function ContactSection() {
                   <input
                     type="file"
                     accept=".pdf,.dwg,.step,.stp,.jpg,.jpeg,.png,.doc,.docx"
-                    className="w-full bg-[oklch(0.22_0.01_240)] border border-[oklch(0.30_0.01_240)] text-[oklch(0.92_0.01_65)] px-4 py-3 text-sm font-['Open_Sans'] focus:outline-none focus:border-[oklch(0.72_0.18_65)] transition-colors cursor-pointer file:bg-[oklch(0.72_0.18_65)] file:border-0 file:text-[oklch(0.09_0.01_240)] file:px-4 file:py-2 file:rounded file:cursor-pointer file:font-bold"
+                    className="w-full bg-[oklch(0.90_0.01_240)] border border-[oklch(0.25_0.01_240)] text-[oklch(0.85_0.005_240)] px-4 py-3 text-sm font-['Open_Sans'] focus:outline-none focus:border-[oklch(0.72_0.18_65)] transition-colors cursor-pointer file:bg-[oklch(0.72_0.18_65)] file:border-0 file:text-[oklch(0.09_0.01_240)] file:px-4 file:py-2 file:rounded file:cursor-pointer file:font-bold"
                     onChange={(e) => setFormData({ ...formData, file: e.target.files?.[0] || null })}
                   />
                   <p className="text-[oklch(0.40_0.01_240)] text-xs mt-2">
@@ -1092,7 +1092,7 @@ function ContactSection() {
 // ─── Main Home Page ───────────────────────────────────────────
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[oklch(0.18_0.01_240)]">
+    <div className="min-h-screen bg-[oklch(0.92_0.01_240)]">
       <Navbar />
       <HeroSection />
       <StatsSection />
