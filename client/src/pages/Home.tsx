@@ -648,7 +648,7 @@ function TechnologySection() {
                 className="w-full h-[480px] object-cover"
               />
               {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.09_0.01_240)] via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.20_0.01_240/0.40)] via-transparent to-transparent opacity-60" />
             </div>
             {/* Floating badge */}
             <div className="absolute bottom-6 left-6 titan-glass p-4 border border-[oklch(0.72_0.18_65)/0.4]">
@@ -819,7 +819,7 @@ function CTABannerSection() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.06_0.01_240/0.95)] to-[oklch(0.06_0.01_240/0.80)]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.20_0.01_240/0.60)] to-[oklch(0.20_0.01_240/0.40)]" />
       <div className="container relative z-10" ref={ref}>
         <div className={`flex flex-col lg:flex-row items-center justify-between gap-8 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="text-center lg:text-left">
