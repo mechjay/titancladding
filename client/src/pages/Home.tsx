@@ -864,7 +864,7 @@ function ContactSection() {
     setSubmitted(true);
   };
 
-  const inputClass = "w-full bg-[oklch(0.90_0.01_240)] border border-[oklch(0.25_0.01_240)] text-[oklch(0.85_0.005_240)] placeholder-[oklch(0.40_0.01_240)] px-4 py-3 text-sm font-['Open_Sans'] focus:outline-none focus:border-[oklch(0.72_0.18_65)] transition-colors";
+  const inputClass = "w-full bg-[oklch(0.90_0.01_240)] border border-[oklch(0.25_0.01_240)] text-[oklch(0.09_0.01_240)] placeholder-[oklch(0.40_0.01_240)] px-4 py-3 text-sm font-['Open_Sans'] focus:outline-none focus:border-[oklch(0.72_0.18_65)] transition-colors";
 
   return (
     <section id="contact" className="py-24 bg-[oklch(0.94_0.01_240)]">
