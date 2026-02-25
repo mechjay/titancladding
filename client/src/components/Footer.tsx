@@ -103,7 +103,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-[oklch(0.82_0.14_185)] flex-shrink-0" />
                 <a
-                  href="tel:+1-000-000-0000"
+                  href="tel:+1-832-208-2666"
                   className="text-[oklch(0.60_0.01_240)] hover:text-[oklch(0.82_0.14_185)] text-sm font-['Open_Sans'] transition-colors"
                 >
                   Call for a Quote

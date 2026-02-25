@@ -1020,7 +1020,7 @@ function ContactSection() {
                     </label>
                     <input
                       type="tel"
-                      placeholder="+1 (713) 000-0000"
+                      placeholder="+1 (832) 208-2666"
                       className={inputClass}
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
