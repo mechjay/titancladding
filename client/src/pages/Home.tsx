@@ -322,7 +322,7 @@ function EquipmentSection() {
       color: "amber",
     },
     {
-      title: "3-Axis Heavy Duty System",
+      title: "4-Axis Heavy Duty System",
       subtitle: "Large Components",
       description: "Dedicated system for heavy and long pieces including OD (outer diameter) work, ID (inner diameter) cladding, and large-scale industrial components. Handles pipeline segments, large valves, and heavy shafts.",
       capabilities: ["OD (outer diameter) cladding", "ID (inner diameter) work", "Long piece processing", "Heavy component handling", "High deposition rates", "Large surface areas"],
