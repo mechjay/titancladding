@@ -241,7 +241,7 @@ function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-[oklch(0.92_0.01_240)]">
+    <section id="services" className="py-24 bg-[oklch(0.94_0.01_240)]">
       <div className="container" ref={ref}>
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -338,7 +338,7 @@ function EquipmentSection() {
   ];
 
   return (
-    <section id="equipment" className="py-24 bg-[oklch(0.92_0.01_240)]">
+    <section id="equipment" className="py-24 bg-[oklch(0.94_0.01_240)]">
       <div className="container" ref={ref}>
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -438,7 +438,7 @@ function QualityLabSection() {
   ];
 
   return (
-    <section id="quality" className="py-24 bg-[oklch(0.92_0.01_240)]">
+    <section id="quality" className="py-24 bg-[oklch(0.94_0.01_240)]">
       <div className="container" ref={ref}>
         {/* Section Header */}
         <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -636,7 +636,7 @@ function TechnologySection() {
   ];
 
   return (
-    <section id="technology" className="py-24 bg-[oklch(0.92_0.01_240)]">
+    <section id="technology" className="py-24 bg-[oklch(0.94_0.01_240)]">
       <div className="container" ref={ref}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Image */}

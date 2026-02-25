@@ -241,8 +241,8 @@
   }
   
   .titan-card {
-    background: oklch(0.90 0.01 240 / 0.8);
-    border: 1px solid oklch(0.88 0.01 240);
+    background: oklch(0.30 0.01 240);
+    border: 1px solid oklch(0.40 0.01 240);
     transition: all 0.3s ease;
   }
   
