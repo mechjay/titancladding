@@ -148,8 +148,8 @@ function HeroSection() {
 // ─── Stats Section ────────────────────────────────────────────
 function StatsSection() {
   const { ref, inView } = useInView(0.3);
-  const years = useCountUp(15, 2000, inView);
-  const components = useCountUp(5000, 2500, inView);
+  const years = useCountUp(7, 2000, inView);
+  const components = useCountUp(2000, 2500, inView);
   const industries = useCountUp(12, 1500, inView);
   const uptime = useCountUp(98, 2000, inView);
 

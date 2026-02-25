@@ -47,10 +47,7 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
           >
             <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-br from-[oklch(0.72_0.18_65)] to-[oklch(0.60_0.20_60)] flex items-center justify-center font-bold text-[oklch(0.09_0.01_240)] text-lg"
-                style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}>
-                T
-              </div>
+              <img src="https://private-us-east-1.manuscdn.com/user_upload_by_module/session_file/310519663381340505/kaYouoNJCocOMtOw.png?Expires=1803523519&Signature=cIoZDkrAI~eGPoxF6rQPNZGCwYVORvgz~kq~DnYqPHiWXalJweUTLnaBXr869g9XMtnUAt8vTQIApTaiEY3xhWegUCV-PnAh8mgDa26C8Sm50tm8QVYBWELbJHtnbl7ZUhkgI8zIabYnXlFvkkn6QKsaDpc-bmlVkXRqwlOue0ZQ-lgJhsqeTxJN70Sh3sfiKEtVmHLRZeGdc38IsMdMbg9Aci-uUmCO4XLrYLZsdz8-~jKrkTMtZrQuGmstv4Tv~RcH5N2Ee3pY8DTR~rYCDBgidKYyMSCc78Zo~Aqj--3qI1zo3cd9uS3uTM5cjnGz-YnQXR3NmRAB0U5EN9givQ__&Key-Pair-Id=K2HSFNDJXOU9YS" alt="TitanClad Logo" className="w-10 h-10 object-contain" />
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-['Rajdhani'] font-700 text-lg tracking-widest text-white uppercase">
