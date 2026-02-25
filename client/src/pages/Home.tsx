@@ -121,11 +121,7 @@ function HeroSection() {
           <div
             className={`flex flex-wrap gap-4 transition-all duration-700 delay-400 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
           >
-            <button onClick={scrollToContact} className="titan-btn-primary flex items-center gap-2">
-              Request a Quote
-              <ArrowRight size={16} />
-            </button>
-            <button onClick={scrollToServices} className="titan-btn-outline flex items-center gap-2">
+            <button onClick={scrollToServices} className="titan-btn-primary flex items-center gap-2">
               Our Services
               <ChevronDown size={16} />
             </button>
