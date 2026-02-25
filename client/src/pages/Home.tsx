@@ -313,6 +313,99 @@ function ServicesSection() {
   );
 }
 
+// ─── Equipment Capabilities Section ──────────────────────────
+function EquipmentSection() {
+  const { ref, inView } = useInView(0.1);
+
+  const machines = [
+    {
+      title: "6-Axis Robotic Arm System",
+      subtitle: "Complex Geometries",
+      description: "Advanced CNC-controlled robotic arms for intricate part geometries, bores, and hard-to-reach surfaces. Perfect for valve internals, pump components, and precision drilling tools.",
+      capabilities: ["Complex 3D geometries", "Internal bore cladding", "Precision positioning", "Multi-axis coverage", "Tight tolerances", "Custom part fixtures"],
+      color: "amber",
+    },
+    {
+      title: "3-Axis Heavy Duty System",
+      subtitle: "Large Components",
+      description: "Dedicated system for heavy and long pieces including OD (outer diameter) work, ID (inner diameter) cladding, and large-scale industrial components. Handles pipeline segments, large valves, and heavy shafts.",
+      capabilities: ["OD (outer diameter) cladding", "ID (inner diameter) work", "Long piece processing", "Heavy component handling", "High deposition rates", "Large surface areas"],
+      color: "cyan",
+    },
+    {
+      title: "Laser Hardening System",
+      subtitle: "Surface Treatment",
+      description: "Selective laser surface hardening for case hardening, wear resistance, and microstructural transformation without distortion. Ideal for shafts, gears, and bearing surfaces.",
+      capabilities: ["Selective hardening", "Case depth control", "Minimal distortion", "High-speed processing", "Complex profiles", "Precision targeting"],
+      color: "amber",
+    },
+  ];
+
+  return (
+    <section id="equipment" className="py-24 bg-[oklch(0.09_0.01_240)]">
+      <div className="container" ref={ref}>
+        {/* Section Header */}
+        <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-[1px] w-8 bg-[oklch(0.72_0.18_65)]" />
+            <span className="font-['Rajdhani'] text-sm tracking-[0.3em] uppercase text-[oklch(0.72_0.18_65)]">
+              Our Capabilities
+            </span>
+          </div>
+          <h2 className="font-['Rajdhani'] font-700 text-4xl md:text-5xl uppercase text-white tracking-wide">
+            Advanced <span className="text-[oklch(0.72_0.18_65)]">Equipment</span>
+          </h2>
+          <p className="text-[oklch(0.55_0.01_240)] max-w-2xl mt-4 font-['Open_Sans'] leading-relaxed">
+            TitanCladding Technology operates state-of-the-art laser cladding systems designed to handle everything from intricate precision work to heavy industrial components. Our equipment is configured for OD work, ID cladding, and laser hardening across a wide range of part sizes and geometries.
+          </p>
+        </div>
+
+        {/* Equipment Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {machines.map((machine, i) => (
+            <div key={i} className={`titan-card p-8 group transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{ transitionDelay: `${i * 100}ms` }}>
+              <div className={`w-16 h-16 flex items-center justify-center mb-6 border-2 ${machine.color === "amber" ? "border-[oklch(0.72_0.18_65)] bg-[oklch(0.72_0.18_65)/0.1]" : "border-[oklch(0.82_0.14_185)] bg-[oklch(0.82_0.14_185)/0.1]"} group-hover:scale-110 transition-transform duration-300`}>
+                <Layers size={28} className={machine.color === "amber" ? "text-[oklch(0.72_0.18_65)]" : "text-[oklch(0.82_0.14_185)]"} />
+              </div>
+              <div className="mb-1">
+                <span className={`text-xs tracking-widest uppercase font-['Rajdhani'] ${machine.color === "amber" ? "text-[oklch(0.72_0.18_65)]" : "text-[oklch(0.82_0.14_185)]"}`}>{machine.subtitle}</span>
+              </div>
+              <h3 className="font-['Rajdhani'] font-700 text-xl uppercase tracking-wide text-white mb-3">{machine.title}</h3>
+              <p className="text-[oklch(0.55_0.01_240)] text-sm leading-relaxed font-['Open_Sans'] mb-5">{machine.description}</p>
+              <div className="space-y-2 border-t border-[oklch(0.18_0.01_240)] pt-5">
+                {machine.capabilities.map((cap, j) => (
+                  <div key={j} className="flex items-center gap-2 text-xs text-[oklch(0.60_0.01_240)] font-['Open_Sans']">
+                    <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${machine.color === "amber" ? "bg-[oklch(0.72_0.18_65)]" : "bg-[oklch(0.82_0.14_185)]"}`} />
+                    {cap}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Technical specs callout */}
+        <div className={`mt-16 p-8 border border-[oklch(0.25_0.01_240)] bg-[oklch(0.06_0.01_240)] transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <div className="font-['Rajdhani'] font-700 text-lg text-[oklch(0.72_0.18_65)] uppercase tracking-wide mb-2">OD Work</div>
+              <p className="text-[oklch(0.55_0.01_240)] text-sm font-['Open_Sans'] leading-relaxed">Outer diameter cladding for external surfaces, including large-diameter components and complex external geometries.</p>
+            </div>
+            <div>
+              <div className="font-['Rajdhani'] font-700 text-lg text-[oklch(0.82_0.14_185)] uppercase tracking-wide mb-2">ID Work</div>
+              <p className="text-[oklch(0.55_0.01_240)] text-sm font-['Open_Sans'] leading-relaxed">Inner diameter cladding for internal bores, valve cavities, and precision internal surfaces with tight tolerances.</p>
+            </div>
+            <div>
+              <div className="font-['Rajdhani'] font-700 text-lg text-[oklch(0.72_0.18_65)] uppercase tracking-wide mb-2">Laser Hardening</div>
+              <p className="text-[oklch(0.55_0.01_240)] text-sm font-['Open_Sans'] leading-relaxed">Surface hardening without distortion for wear-resistant coatings, case hardening, and microstructural enhancement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ─── Industries Section ───────────────────────────────────────
 function IndustriesSection() {
   const { ref, inView } = useInView(0.1);
@@ -886,6 +979,7 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <ServicesSection />
+      <EquipmentSection />
       <IndustriesSection />
       <TechnologySection />
       <AboutSection />
