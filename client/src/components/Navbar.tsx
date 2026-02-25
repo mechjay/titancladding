@@ -80,13 +80,6 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+1-832-208-2666"
-              className="flex items-center gap-2 text-[oklch(0.82_0.14_185)] text-sm font-['Open_Sans'] hover:text-white transition-colors"
-            >
-              <Phone size={14} />
-              <span>Get a Quote</span>
-            </a>
-            <a
               href="#contact"
               onClick={(e) => { e.preventDefault(); handleNavClick("#contact"); }}
               className="titan-btn-primary text-sm px-5 py-2"
