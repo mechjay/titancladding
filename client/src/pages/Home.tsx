@@ -929,9 +929,9 @@ function ContactSection() {
                   <div className="font-['Rajdhani'] font-700 text-sm uppercase tracking-widest text-[oklch(0.72_0.18_65)] mb-1">
                     Phone
                   </div>
-                  <p className="text-[oklch(0.65_0.01_240)] text-sm font-['Open_Sans']">
-                    Contact us for our direct line
-                  </p>
+                  <a href="tel:+1-832-208-2666" className="text-[oklch(0.65_0.01_240)] text-sm font-['Open_Sans'] hover:text-[oklch(0.72_0.18_65)] transition-colors">
+                    (832) 208-2666
+                  </a>
                 </div>
               </div>
             </div>
