@@ -970,7 +970,7 @@ function ContactSection() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-[oklch(0.55_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
+                    <label className="block text-[oklch(0.09_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
                       Full Name *
                     </label>
                     <input
@@ -983,7 +983,7 @@ function ContactSection() {
                     />
                   </div>
                   <div>
-                    <label className="block text-[oklch(0.55_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
+                    <label className="block text-[oklch(0.09_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
                       Company
                     </label>
                     <input
@@ -998,7 +998,7 @@ function ContactSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-[oklch(0.55_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
+                    <label className="block text-[oklch(0.09_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
                       Email *
                     </label>
                     <input
@@ -1011,7 +1011,7 @@ function ContactSection() {
                     />
                   </div>
                   <div>
-                    <label className="block text-[oklch(0.55_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
+                    <label className="block text-[oklch(0.09_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
                       Phone
                     </label>
                     <input
@@ -1025,7 +1025,7 @@ function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-[oklch(0.55_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
+                  <label className="block text-[oklch(0.09_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
                     Service Required
                   </label>
                   <select
@@ -1044,7 +1044,7 @@ function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-[oklch(0.55_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
+                  <label className="block text-[oklch(0.09_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
                     Project Details *
                   </label>
                   <textarea
@@ -1058,7 +1058,7 @@ function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-[oklch(0.55_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
+                  <label className="block text-[oklch(0.09_0.01_240)] text-xs uppercase tracking-widest font-['Rajdhani'] mb-2">
                     Upload Drawings or Specifications (Optional)
                   </label>
                   <input
