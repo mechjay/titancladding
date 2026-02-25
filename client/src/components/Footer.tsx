@@ -20,7 +20,12 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <img src="https://private-us-east-1.manuscdn.com/user_upload_by_module/session_file/310519663381340505/kaYouoNJCocOMtOw.png?Expires=1803523519&Signature=cIoZDkrAI~eGPoxF6rQPNZGCwYVORvgz~kq~DnYqPHiWXalJweUTLnaBXr869g9XMtnUAt8vTQIApTaiEY3xhWegUCV-PnAh8mgDa26C8Sm50tm8QVYBWELbJHtnbl7ZUhkgI8zIabYnXlFvkkn6QKsaDpc-bmlVkXRqwlOue0ZQ-lgJhsqeTxJN70Sh3sfiKEtVmHLRZeGdc38IsMdMbg9Aci-uUmCO4XLrYLZsdz8-~jKrkTMtZrQuGmstv4Tv~RcH5N2Ee3pY8DTR~rYCDBgidKYyMSCc78Zo~Aqj--3qI1zo3cd9uS3uTM5cjnGz-YnQXR3NmRAB0U5EN9givQ__&Key-Pair-Id=K2HSFNDJXOU9YS" alt="TitanClad Logo" className="w-12 h-12 object-contain" />
+              <div
+                className="w-12 h-12 bg-gradient-to-br from-[oklch(0.72_0.18_65)] to-[oklch(0.60_0.20_60)] flex items-center justify-center font-bold text-[oklch(0.09_0.01_240)] text-xl"
+                style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}
+              >
+                T
+              </div>
               <div>
                 <div className="font-['Rajdhani'] font-700 text-xl tracking-widest text-white uppercase">
                   Titan<span className="text-[oklch(0.72_0.18_65)]">Cladding</span>{" "}
