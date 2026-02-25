@@ -406,6 +406,113 @@ function EquipmentSection() {
   );
 }
 
+// ─── Quality Assurance & Lab Section ───────────────────────────
+function QualityLabSection() {
+  const { ref, inView } = useInView(0.1);
+
+  const labServices = [
+    {
+      title: "Metallographic Analysis",
+      description: "Comprehensive microstructural examination including dilution rate analysis, bond line evaluation, and phase identification. Ensures cladding chemistry and performance meet specifications.",
+      capabilities: ["Dilution rate measurement", "Bond line integrity", "Phase analysis", "Hardness mapping", "Microstructure documentation", "Chemical composition verification"],
+      icon: "🔬",
+      color: "amber",
+    },
+    {
+      title: "Dimensional & Surface Inspection",
+      description: "Precision dimensional verification, surface finish analysis, and geometric tolerance checking. Confirms components meet drawing specifications and functional requirements.",
+      capabilities: ["Dimensional accuracy", "Surface finish (Ra/Rz)", "Geometric tolerances", "Bore/OD verification", "Coating thickness", "Visual defect inspection"],
+      icon: "📐",
+      color: "cyan",
+    },
+    {
+      title: "Non-Destructive Testing (NDT)",
+      description: "Advanced inspection techniques to detect subsurface defects, porosity, cracks, and coating adhesion issues without damaging the component.",
+      capabilities: ["Ultrasonic testing", "Dye penetrant inspection", "Adhesion testing", "Porosity detection", "Crack detection", "Coating integrity"],
+      icon: "🔍",
+      color: "amber",
+    },
+    {
+      title: "Hardness & Wear Testing",
+      description: "Comprehensive hardness profiling, wear resistance evaluation, and performance validation to confirm the cladding meets application requirements.",
+      capabilities: ["Hardness profiling (HV/HRC)", "Wear resistance testing", "Erosion resistance", "Corrosion resistance", "Performance validation", "Comparative analysis"],
+      icon: "⚡",
+      color: "cyan",
+    },
+  ];
+
+  return (
+    <section id="quality" className="py-24 bg-[oklch(0.09_0.01_240)]">
+      <div className="container" ref={ref}>
+        {/* Section Header */}
+        <div className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-[1px] w-8 bg-[oklch(0.72_0.18_65)]" />
+            <span className="font-['Rajdhani'] text-sm tracking-[0.3em] uppercase text-[oklch(0.72_0.18_65)]">
+              Quality Assurance
+            </span>
+          </div>
+          <h2 className="font-['Rajdhani'] font-700 text-4xl md:text-5xl uppercase text-white tracking-wide">
+            In-House <span className="text-[oklch(0.72_0.18_65)]">Lab & Inspection</span>
+          </h2>
+          <p className="text-[oklch(0.55_0.01_240)] max-w-2xl mt-4 font-['Open_Sans'] leading-relaxed">
+            Every component processed under the TitanClad™ standard undergoes rigorous in-house laboratory testing and inspection. Our metallurgical lab provides comprehensive analysis including dilution rate measurement, microstructural examination, and performance validation — ensuring your components exceed specifications.
+          </p>
+        </div>
+
+        {/* Lab Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          {labServices.map((service, i) => (
+            <div
+              key={i}
+              className={`titan-card p-8 group transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              style={{ transitionDelay: `${i * 100}ms` }}
+            >
+              {/* Icon */}
+              <div
+                className={`w-16 h-16 flex items-center justify-center mb-6 border-2 text-3xl ${service.color === "amber" ? "border-[oklch(0.72_0.18_65)] bg-[oklch(0.72_0.18_65)/0.1]" : "border-[oklch(0.82_0.14_185)] bg-[oklch(0.82_0.14_185)/0.1]"} group-hover:scale-110 transition-transform duration-300`}
+              >
+                {service.icon}
+              </div>
+
+              {/* Title */}
+              <h3 className="font-['Rajdhani'] font-700 text-xl uppercase tracking-wide text-white mb-3">
+                {service.title}
+              </h3>
+              <p className="text-[oklch(0.55_0.01_240)] text-sm leading-relaxed font-['Open_Sans'] mb-5">
+                {service.description}
+              </p>
+
+              {/* Capabilities */}
+              <div className="space-y-2 border-t border-[oklch(0.18_0.01_240)] pt-5">
+                {service.capabilities.map((cap, j) => (
+                  <div key={j} className="flex items-center gap-2 text-xs text-[oklch(0.60_0.01_240)] font-['Open_Sans']">
+                    <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${service.color === "amber" ? "bg-[oklch(0.72_0.18_65)]" : "bg-[oklch(0.82_0.14_185)]"}`} />
+                    {cap}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Quality Promise */}
+        <div className={`p-8 border-l-4 border-[oklch(0.72_0.18_65)] bg-[oklch(0.06_0.01_240)] transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <div className="flex gap-6 items-start">
+            <div className="text-3xl flex-shrink-0">✓</div>
+            <div>
+              <h3 className="font-['Rajdhani'] font-700 text-lg text-white uppercase tracking-wide mb-2">The TitanClad™ Quality Promise</h3>
+              <p className="text-[oklch(0.55_0.01_240)] font-['Open_Sans'] leading-relaxed">
+                Every component receives a comprehensive inspection report documenting dilution rates, microstructural analysis, dimensional verification, and hardness profiling. We stand behind our work with detailed metallurgical data and performance validation — giving you confidence that your critical components will perform flawlessly in the field.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ─── Industries Section ───────────────────────────────────────
 function IndustriesSection() {
   const { ref, inView } = useInView(0.1);
@@ -980,6 +1087,7 @@ export default function Home() {
       <StatsSection />
       <ServicesSection />
       <EquipmentSection />
+      <QualityLabSection />
       <IndustriesSection />
       <TechnologySection />
       <AboutSection />
