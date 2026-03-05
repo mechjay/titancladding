@@ -47,10 +47,11 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
           >
             <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-br from-[oklch(0.72_0.18_65)] to-[oklch(0.60_0.20_60)] flex items-center justify-center font-bold text-[oklch(0.09_0.01_240)] text-lg"
-                style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}>
-                T
-              </div>
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663381340505/bTUuGLgttnsgjQYhgv59JA/titanclad_logo_nav_c6a6b2bb.png"
+                alt="TitanClad Logo"
+                className="w-10 h-10 object-contain"
+              />
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-['Rajdhani'] font-700 text-lg tracking-widest text-white uppercase">

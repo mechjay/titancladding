@@ -20,12 +20,11 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <div
-                className="w-12 h-12 bg-gradient-to-br from-[oklch(0.72_0.18_65)] to-[oklch(0.60_0.20_60)] flex items-center justify-center font-bold text-[oklch(0.09_0.01_240)] text-xl"
-                style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}
-              >
-                T
-              </div>
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663381340505/bTUuGLgttnsgjQYhgv59JA/titanclad_logo_nav_c6a6b2bb.png"
+                alt="TitanClad Logo"
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <div className="font-['Rajdhani'] font-700 text-xl tracking-widest text-white uppercase">
                   Titan<span className="text-[oklch(0.72_0.18_65)]">Cladding</span>{" "}
