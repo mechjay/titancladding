@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663381340505/bTUuGLgttnsgjQYhgv59JA/titanclad_logo_nav_c6a6b2bb.png"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663381340505/bTUuGLgttnsgjQYhgv59JA/titanclad_logo_transparent_5c440cbb.png"
                 alt="TitanClad Logo"
                 className="w-12 h-12 object-contain"
               />

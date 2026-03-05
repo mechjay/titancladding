@@ -48,7 +48,7 @@ export default function Navbar() {
           >
             <div className="relative">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663381340505/bTUuGLgttnsgjQYhgv59JA/titanclad_logo_nav_c6a6b2bb.png"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663381340505/bTUuGLgttnsgjQYhgv59JA/titanclad_logo_transparent_5c440cbb.png"
                 alt="TitanClad Logo"
                 className="w-10 h-10 object-contain"
               />
